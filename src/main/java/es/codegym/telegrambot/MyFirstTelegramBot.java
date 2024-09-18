@@ -20,48 +20,57 @@ public class MyFirstTelegramBot extends MultiSessionTelegramBot {
 
     @Override
     public void onUpdateEventReceived(Update update) {
-        // TODO: escribiremos la funcionalidad principal del bot aquí
-        //Code original
+        
 
-        if (getMessageText().equals("/start")) {
+        if (getMessageText().equals("hola")) {
             setUserGlory(0);
 
-            sendPhotoMessageAsync("step_1_pic");
+            sendPhotoMessageAsync("foto_1");
             sendTextMessageAsync(STEP_1_TEXT,
-                    Map.of("Hackear la nevera", "step_1_btn"));
+                    Map.of("Postularme", "step_1_btn"));
         }
 
         if (getCallbackQueryButtonKey().equals("step_1_btn")) {
+            sendTextMessageAsync("Por favor, completa el formulario electrónico en el siguiente enlace:https://forms.office.com/pages/responsepage.aspx?id=FE0oNsETY02crM1gOfBLA3CzmEiN9X1Djwy4yQJPbfRUQ1RLNFo5MkU3NFg4QzhaSTJWWDdGTDRXRy4u&route=shorturl");
             setUserGlory(20);
-            sendPhotoMessageAsync("step_2_pic");
+            sendPhotoMessageAsync("foto_1");
             sendTextMessageAsync(STEP_2_TEXT,
-                    Map.of("Tomar una salchicha + 20 de fama!", "step_2_btn",
-                            "Tomar un pescado + 20 de fama!", "step_2_btn",
-                            "Tirar la lata de pepinillos! + 20 de fama", "step_2_btn"));
+                    Map.of("Ver carreras?", "step_2_btn",
+                            "Visitar sitio Web de Hamilo", "step_3_btn",
+                            "Contactar con Hamilo", "step_4_btn"));
         }
-        if (getCallbackQueryButtonKey().equals("step_2_btn")) {
-            setUserGlory(20);
-            sendPhotoMessageAsync("step_3_pic");
-            sendTextMessageAsync(STEP_3_TEXT,
-                    Map.of("Hackear al boton aspiradora", "step_3_btn"));
+            if (getCallbackQueryButtonKey().equals("step_2_btn")) {
+                // Redirigir automáticamente al usuario a una página web
+                String url = "https://www.hamiloes.cool/";
+                sendTextMessageAsync("Redirigiendo... Haga clic en el siguiente enlace:  " + url);
+                setUserGlory(20);
+                //sendPhotoMessageAsync("step_3_pic");
+                sendTextMessageAsync(STEP_3_TEXT,
+                        Map.of("Ver carreras?", "step_2_btn",
+                                "Visitar sitio Web de Hamilo", "step_3_btn",
+                                "Contactar con Hamilo", "step_4_btn"));
 
-        }
+            }
 
         if (getCallbackQueryButtonKey().equals("step_3_btn")) {
+            String url = "https://www.hamiloes.cool/full-sack-developer/";
+            sendTextMessageAsync("Redirigiendo... Haga clic en el siguiente enlace:  " + url);
             setUserGlory(30);
-            sendPhotoMessageAsync("step_4_pic");
+           // sendPhotoMessageAsync("step_4_pic");
             sendTextMessageAsync(STEP_4_TEXT,
-                    Map.of("Enviar al robot aspiradora por comida! + 30 de fama", "step_4_btn",
+                    Map.of("Contactar con Hamilo", "step_4_btn",
                             "Dar un paseo en el robot aspirador! +30 de fama", "step_4_btn",
                             "Huir del robot aspiradora! + 30 de fama", "step_4_btn"));
         }
 
 
         if (getCallbackQueryButtonKey().equals("step_4_btn")) {
+            String url = "https://www.hamiloes.cool/contacto/";
+            sendTextMessageAsync("Redirigiendo... Haga clic en el siguiente enlace:  " + url);
             setUserGlory(30);
-            sendPhotoMessageAsync("step_5_pic");
+            //sendPhotoMessageAsync("step_5_pic");
             sendTextMessageAsync(STEP_5_TEXT,
-                    Map.of("Encender y ponerse la GoPro!","step_5_btn"));
+                    Map.of("Ver galeria de talentos?","step_5_btn"));
 
 
         }
@@ -69,8 +78,8 @@ public class MyFirstTelegramBot extends MultiSessionTelegramBot {
             setUserGlory(40);
             sendPhotoMessageAsync("step_6_pic");
             sendTextMessageAsync(STEP_6_TEXT,
-                    Map.of("Postear tus fotos en instagram + 20 de fama","step_6_btn",
-                            "Editar tus fotos en la computadora +20 de fama","step_6_btn"));
+                    Map.of("Postularme ya!","step_1_btn",
+                            "Visitar sitio Web de Hamilo","step_2_btn"));
 
 
         }

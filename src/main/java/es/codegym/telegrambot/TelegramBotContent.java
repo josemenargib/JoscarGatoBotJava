@@ -2,53 +2,53 @@ package es.codegym.telegrambot;
 
 public class TelegramBotContent {
     public static final String STEP_1_TEXT = """
-             *¡BIENVENID@ A LAS OFERTAS DEL DIA!*   
+             *QUIENES SOMOS*   
              
-             Te despiertas y te das cuenta de que eres un gato. Es una buena mañana, pero ¿qué son estos extraños sentimientos? Tu estómago está rugiendo de hambre. No hay comida en el apartamento, excepto en la nevera cerrada. ¿Qué hacer?
-             Tendrás que recordar cómo piratear la nevera digital. Abre el libro "Hacking Avanzado para Gatos":
+             Forjar un futuro de posibilidades para personas talentosas y apasionadas, 
+             derribando las barreras económicas que restringen su acceso a oportunidades 
+             de aprendizaje y salidas laborales.":
              
-                 1. Completa la primera tarea y luego pasa la página.
-                 2. Avanza y ve a lo más interesante.
-                 3. Realiza acciones para ganarte el respeto de todos los gatos locales.
+             *NUESTRA MISION:
+               "Brindar oportunidades a personas talentosas con el fin de impulsar
+               su transfromacion educativa y tecnologica y generar un impacto social significativo.
+               
+               *COMO POSTULAR?
+                 1. Pre registro.
+                 2. Prueba psicotenica.
+                 3. Entrevista.
                  
-             *Gato doméstico común, nivel uno.*
+             *POSTÚLATE*
              
-             ¡Hackea la nevera digital y completa la primera tarea!
+             ¡Atrévete!
              
              """;
 
     public static final String STEP_2_TEXT = """
-             *¡BIENVENIDO AL SEGUNDO NIVEL!*
+             *¡BIENVENID@!*
              
-             ¡Bien! Has derrotado la nevera. ¡Ganas +20 de fama!
+             ¡Bien! Acabas de dar el primer paso!
              
-             _Acumulado: 20 de fama._
+             _Que deseas hacer?._
              
-             Elige tu recompensa:
+             Elige una de las opciones:
 
              """;
 
     public static final String STEP_3_TEXT = """
-            *Gato programador, nivel dos.*
-            De repente, desde la esquina, apareció un robot aspiradora zumbante. ¡Es hora de vengarse!
-            Completa la segunda tarea y ¡hackéalo!
+            *DA EL PRIMER PASO
+             HACIA UN FUTURO LLENO DE OPORTUNIDADES
+             Únete a nuestra comunidad y desarrolla tu futuro tecnológico sin costo inicial.
             """;
 
     public static final String STEP_4_TEXT = """
-             *¡BIENVENIDO AL TERCER NIVEL!*
-             
-             ¡Has derrotado al robot aspiradora! ¡Ganas +30 de fama!
-             
-             _Acumulado: 70 de fama._
-             
-             Elige tu recompensa:
+             *Contacto
+             Escríbenos a nuestras redes:
 
              """;
 
     public static final String STEP_5_TEXT = """
-            *Gato Robosubyugador, nivel tres.*
-            ¡Jaja! ¡Se encontró una GoPro abandonada en el estante!
-            Completa la tercera tarea: ¡póntela y enciéndela!
+            *Nuestros flamantes graduados.*
+            ¡A continuacion te mostramos talento humano full stack!
             """;
 
     public static final String STEP_6_TEXT = """
